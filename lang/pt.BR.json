@@ -1,0 +1,400 @@
+{
+  "TYPES": {
+    "Actor": {
+      "deployable": "Desdobrável",
+      "mech": "Mecha",
+      "npc": "NPC",
+      "pilot": "Piloto"
+    },
+    "Item": {
+      "bond": "Vínculo",
+      "core_bonus": "Bônus Principal",
+      "frame": "Estrutura",
+      "license": "Licença",
+      "mech_system": "Sistema de Mecha",
+      "mech_weapon": "Arma de Mecha",
+      "npc_class": "Classe de NPC",
+      "npc_feature": "Característica de NPC",
+      "npc_template": "Modelo de NPC",
+      "organization": "Organização",
+      "pilot_armor": "Armadura de Piloto",
+      "pilot_gear": "Equipamento de Piloto",
+      "pilot_weapon": "Arma de Piloto",
+      "reserve": "Reserva",
+      "skill": "Habilidade",
+      "status": "Status/Condição",
+      "talent": "Talento",
+      "weapon_mod": "Modificação de Arma"
+    }
+  },
+  "lancer": {
+    "Actor": {
+      "FIELDS": {
+        "activations": { "label": "Ativações" }
+      }
+    },
+    "placeholder": {
+      "name": "Nome"
+    },
+    "common-sheet": {
+      "tabs": {
+        "effects": "<EFEITOS//ATIVOS>"
+      }
+    },
+    "deployable-sheet": {
+      "tabs": {
+        "status": "<STATUS>",
+        "config": "<CONFIG>"
+      },
+      "deployer": {
+        "label": "DESDOBRADOR"
+      },
+      "stats": {
+        "label": "ESTATÍSTICAS BÁSICAS"
+      }
+    },
+    "mech-sheet": {
+      "tabs": {
+        "stats": "<MECHA//ESTATÍSTICAS>",
+        "loadout": "<MECHA//CARREGAMENTO>",
+        "talents": "<PILOTO//TALENTOS>"
+      },
+      "core": {
+        "label": "NÚCLEO"
+      },
+      "actions": {
+        "label": "AÇÕES"
+      },
+      "macros": {
+        "label": "MACROS"
+      },
+      "system": {
+        "label": "CARREGAMENTO",
+        "sp-used": "SP USADO"
+      }
+    },
+    "npc-sheet": {
+      "header": {
+        "class": "CLASSE:"
+      },
+      "class": {
+        "label": "CLASSE",
+        "none": "NENHUMA CLASSE ENCONTRADA"
+      },
+      "templates": {
+        "label": "MODELOS"
+      },
+      "features": {
+        "label": "CARACTERÍSTICAS"
+      },
+      "effects": {
+        "label": "EFEITOS ATIVOS"
+      }
+    },
+    "pilot-sheet": {
+      "header": {
+        "ll": "NÍVEL DE LICENÇA:",
+        "cs": "APELIDO:",
+        "name": "NOME:",
+        "bg": "HISTÓRICO:"
+      },
+      "tabs": {
+        "cloud": "<RM-4://SYNC>",
+        "dossier": "<PILOTO//DOSSIÊ>",
+        "narrative": "<PILOTO//NARRATIVA>",
+        "tactical": "<PILOTO//TÁTICO>",
+        "loadout": "<EQUIP//CARREGAMENTO>",
+        "mech": "<MECHA//ATIVO>"
+      },
+      "cloud-header": {
+        "label": "RM-4://(ID DE CONEXÃO OMNINET)",
+        "vaultID": "Carregar da sua conta Comp/Con (se logado)",
+        "raw-placeholder": "ou insira um código manualmente"
+      },
+      "cloud-download": {
+        "label": "DOWNLOAD",
+        "lastSync": "Última sincronização: {timestamp}"
+      },
+	  "cloud-upload": {
+  "label": "UPLOAD",
+  "wip": "FUNCIONALIDADE EM DESENVOLVIMENTO"
+},
+"json-import": {
+  "label": "IMPORTAR"
+},
+"dossier": {
+  "cs": "APELIDO",
+  "name": "NOME"
+},
+"narrative": {
+  "bond": "VÍNCULO DE {bondName}",
+  "burdens": "FARDOS",
+  "clocks": "RELÓGIOS"
+},
+"tactical": {
+  "armor": "ARMADURA",
+  "weapons": "ARMAS",
+  "gear": "EQUIPAMENTO",
+  "reserves": "RESERVAS",
+  "licenses": "LICENÇAS",
+  "cores": "BÔNUS PRINCIPAIS"
+},
+"abilities": {
+  "skills": "GATILHOS DE HABILIDADE",
+  "talents": "TALENTOS"
+},
+"chat-card": {
+  "title": {
+    "attack": "// ATAQUE //",
+    "damage": "// DANO //",
+    "reliable": "// CONFIÁVEL //",
+    "crit-damage": "// DANO CRÍTICO //",
+    "self-heat": "// AQUECIMENTO PRÓPRIO //",
+    "defense-hit": "// ATAQUE VS {defense} //",
+    "effect": "// EFEITO //",
+    "on-attack": "// NO ATAQUE //",
+    "on-hit": "// NO ACERTO //",
+    "on-crit": "// NO CRÍTICO //",
+    "charge-roll": "// ROLAR CARGA //",
+    "recharged": "// RECARREGADO //",
+    "structure": "// DANO À ESTRUTURA //",
+    "overheating": "// SUPERAQUECIMENTO //",
+    "cascade": "// CASCATA //",
+    "check": "// VERIFICAR :: {check} //",
+    "system": "// SISTEMA :: {title} //",
+    "mod": "// MODIFICAÇÃO :: {title} //",
+    "trait": "// CARACTERÍSTICA :: {title} //",
+    "tech": "// TECNOLOGIA :: {title} //",
+    "reaction": "// REAÇÃO :: {title} //"
+  },
+  "label": {
+    "trigger": "GATILHO",
+    "effect": "EFEITO"
+  },
+  "attack": {
+    "crit": "CRÍTICO",
+    "hit": "ACERTO",
+    "miss": "ERRO",
+    "roll-all-damage": "ROLAR DANO"
+  },
+  "exclamation": {
+    "overkill": "EXAGERO!"
+  },
+  "overcharge": {
+    "charged": "{target} + :: CARREGADO",
+    "uncharged": "{target} + :: DESCARREGADO"
+  },
+  "remaining": "{total} / {max} RESTANTES"
+},
+"floatingDamageNumbers": {
+  "name": "Números de Dano Flutuantes",
+  "hint": "Ativar números de dano flutuantes para mudanças nas estatísticas, incluindo aplicação de rolagens de dano. Esta configuração é separada para cada cliente."
+},
+"uiTheme": {
+  "name": "Tema da Interface",
+  "hint": "Esquema de cores para a interface, ecoando os temas do Comp/Con.",
+  "gms": "GMS Vermelho (padrão)",
+  "gmsDark": "GMS Escuro",
+  "msmc": "MSMC Solarizado",
+  "horus": "Terminal HORUS",
+  "ha": "Harrison Armory Ras Shamra",
+  "ssc": "SSC Congresso Constellar",
+  "ipsn": "IPS-N Carina",
+  "gal": "PREVISÃO/GALSIM"
+},
+"statusIconsConfig": {
+  "menu-name": "Ícones de Status",
+  "menu-label": "Configuração de Ícones de Status",
+  "menu-hint": "Configurar os ícones de status que aparecem no HUD do token",
+  "defaultConditionsStatus": "Condições e Status Padrão",
+  "defaultConditionsStatus-desc": "Ativar o conjunto de ícones padrão para condições e status",
+  "cancerConditionsStatus": "Condições e Status de Cancermantis",
+  "cancerConditionsStatus-desc": "Ativar o conjunto de ícones de Cancermantis para condições e status",
+  "cancerNPCTemplates": "Modelos de NPC de Cancermantis",
+  "cancerNPCTemplates-desc": "Ativar o conjunto de ícones de Cancermantis para modelos de NPC",
+  "hayleyConditionsStatus": "Condição e Status de Hayley",
+  "hayleyConditionsStatus-desc": "Ativar o conjunto de ícones de Hayley para condições e status",
+  "hayleyPC": "Sistemas de PC de Hayley",
+  "hayleyPC-desc": "Ativar o conjunto de ícones de Hayley para efeitos de sistema de PC",
+  "hayleyNPC": "Sistemas de NPC de Hayley",
+  "hayleyNPC-desc": "Ativar o conjunto de ícones de Hayley para efeitos de sistema de NPC",
+  "hayleyUtility": "Utilitário de Hayley",
+  "hayleyUtility-desc": "Ativar o conjunto de ícones de Hayley para indicadores de utilitário",
+  "tommyConditionsStatus": "Condição e Status de Tommy",
+  "tommyConditionsStatus-desc": "Ativar o conjunto de ícones de Tommy para condições e status"
+},
+"statusIconsNames": {
+  "abjure": "Abjurar",
+  "aceso": "Aceso",
+  "blind": "Cego",
+  "bolster": "Reforçar",
+  "burn": "Queimar",
+  "camus_razor": "Navalha de Camus",
+  "chain": "Corrente",
+  "chains_of_prometheus": "Correntes de Prometeu",
+  "clamp_bomb": "Bomba de Fixação",
+  "commander": "Comandante",
+  "cover_hard": "Cobertura - Dura",
+  "cover_soft": "Cobertura - Suave",
+  "dangerzone": "Zona de Perigo",
+  "destroyed": "Destruído",
+  "dimensional_shackles": "Grilhões Dimensionais",
+  "dispersal_shield_1": "Escudo de Dispersão 1",
+  "dispersal_shield_2": "Escudo de Dispersão 2",
+  "dispersal_shield_3": "Escudo de Dispersão 3",
+  "dominions_breadth": "Largura do Domínio",
+  "downandout": "Abatido e Fora",
+  "duat_gate": "Portão de Duat",
+  "echo_edge": "Borda do Eco",
+  "elite": "Elite",
+  "engaged": "Engajado",
+  "excommunicate": "Excomungar",
+  "exotic": "Exótico",
+  "exposed": "Exposto",
+  "fade_cloak": "Manto de Desvanecimento",
+  "flaw_minus": "DEFEITO_menos",
+  "flaw_plus": "DEFEITO_mais",
+  "flying": "Voando",
+  "focus_down": "Foco Abaixado",
+  "follower_count": "Contagem de Seguidores",
+  "grappled": "Agarrado",
+  "gravity": "Gravidade",
+  "grind_maniple": "Manipulo de Trituração",
+  "grunt": "Soldado Raso",
+  "haste": "Apressar",
+  "hidden": "Escondido",
+  "hiddeninvis": "Escondido e Invisível",
+  "hunter_lock": "Trava de Caçador",
+  "hyperdense_armor": "Armadura Hiper-densa",
+  "illusionary_subroutines": "Sub-rotinas Ilusórias",
+  "immobilized": "Imobilizado",
+  "impaired": "Prejudicado",
+  "imperial_eye": "Olho Imperial",
+  "intangible": "Intangível",
+  "investiture": "Investidura",
+  "invisible": "Invisível",
+  "jammed": "Travado",
+  "kraul_grapple": "Agarrão de Kraul",
+  "latch_drone": "Drone de Trava",
+  "lockon": "Travar",
+  "marked": "Marcado",
+  "mercenary": "Mercenário",
+  "metahook": "Meta-gancho",
+  "molten_puncture": "Perfuração Derretida",
+  "npc_tier_1": "Nível 1",
+  "npc_tier_2": "Nível 2",
+  "npc_tier_3": "Nível 3",
+  "overshield": "Super-escudo",
+  "pain_transference": "Transferência de Dor",
+  "petrify": "Petrificar",
+  "pirate": "Pirata",
+  "prone": "Prostrado",
+  "reactor_meltdown": "Fusão do Reator",
+  "resistance_burn": "Resistir Queima",
+  "resistance_energy": "Resistir Energia" ,
+ },
+  "automation": {
+    "menu-name": "Automação",
+    "menu-label": "Configurações de Automação do Sistema",
+    "menu-hint": "Configurar quais opções de automação do sistema estão habilitadas, ou desativá-las todas",
+    "master-switch": "Habilitado",
+    "master-switch-desc": "Desative isso para fazer tudo manualmente",
+    "attacks": "Avaliação de rolagens de ataque",
+    "attacks-desc": "Alternar se você deseja que o sistema calcule automaticamente os acertos e outras automações relacionadas a ataques.",
+    "damage": "Aplicação de dano",
+    "damage-desc": "Alternar se você deseja que o sistema aplique o dano rolado aos alvos.",
+    "structure": "Estrutura/Estresse",
+    "structure-desc": "Solicitar automaticamente uma rolagem de estrutura ou estresse quando um mecha alcançar 0 hp ou exceder seu limite de calor.",
+    "overcharge_heat": "Aplicar Calor de Sobrecarga",
+    "overcharge_heat-desc": "Aplicar automaticamente calor ao rolar sobrecarga",
+    "attack_self_heat": "Calor Próprio de Ataques",
+    "attack_self_heat-desc": "Quando uma arma tiver as tags Excesso ou Calor (próprio), aplicar automaticamente qualquer calor.",
+    "remove_templates": "Remover Modelos a Cada Turno",
+    "remove_templates-desc": "Quando o turno mudar, os modelos medidos dos ataques devem ser limpos?",
+    "limited_loading": "Gerenciar Limitação/Carregamento",
+    "limited_loading-desc": "Quando os itens forem usados, seu status de limitação e carregamento deve ser automaticamente gerenciado e rastreado?",
+    "npc_recharge": "Recarga de NPC",
+    "npc_recharge-desc": "Rolar automaticamente para recarregar sistemas de NPC no início do turno deles.",
+    "token_size": "Gerenciar Tamanhos de Tokens",
+    "token_size-desc": "Forçar automaticamente os tamanhos dos tokens a corresponder ao tamanho do ator associado."
+  },
+  "actionTracker": {
+    "menu-name": "Rastreador de Ações",
+    "menu-label": "Configurações do Rastreador de Ações",
+    "menu-hint": "Configurar opções relacionadas ao HUD do rastreador de ações e automações.",
+    "showHotbar": "Mostrar Barra de Atalhos",
+    "showHotbar-desc": "Alternar a exibição da barra de atalhos flutuante durante o combate.",
+    "allowPlayers": "Permitir Jogadores",
+    "allowPlayers-desc": "Permitir que os jogadores modifiquem suas próprias ações.",
+    "printMessages": "Imprimir Mensagens",
+    "printMessages-desc": "Imprimir mensagens de chat para início e fim do turno de um token."
+  },
+  "initiative": {
+    "sorttracker": "Ordenar o rastreador",
+    "sorttracker-desc": "Mover a unidade que está fazendo seu turno para o topo do rastreador e mover as unidades que fizeram seu turno para o final do rastreador.",
+    "appearancesettingslabel": "Configurações de Aparência",
+    "appearancesettingsbutton": "Aparência",
+    "appearancesettings-desc": "Configurar as cores e ícones usados no rastreador"
+  },
+  "squaregriddiagonals": {
+    "name": "Movimento Diagonal na Grade Quadrada",
+    "hint": "Como as distâncias serão calculadas ao mover diagonalmente em uma grade quadrada.",
+    "111": "1-1-1: Movimentos diagonais custam 1 (padrão)",
+    "121": "1-2-1: Movimentos diagonais alternam o custo de 1 para 2",
+    "222": "2-2-2: Distância de Manhattan. Diagonais custam 2",
+    "euc": "Euclidiana: Distância Euclidiana arredondada"
+  },
+  "effect": {
+    "categories": {
+      "passive": "Passivo",
+      "passthrough": "Atravessar",
+      "disabled": "Desativado",
+      "inherited": "Herdado"
+    }
+  },
+  "compendium": {
+    "core_macros": "Macros LANCER",
+    "lancer_info": "Informações LANCER",
+    "deployable": "Desdobráveis",
+    "mech-items": "Itens de Mecha",
+    "npc-actors": "NPCs Prontos",
+    "npc-items": "Itens de NPC",
+    "pilot-items": "Itens de Piloto",
+    "player-actors": "Atores de Jogadores Prontos",
+    "status-items": "Status/Condição"
+  },
+  "tokenConfig": {
+    "manual_token_size": {
+      "label": "Dimensionamento Manual de Tokens",
+      "hint": "Ignorar automação do sistema para determinar o tamanho dos tokens"
+    }
+  },
+  "LANCERINITIATIVE": {
+    "IconSettingsMenu": "Configurações de Ícones",
+    "Icon": "Ícone de Ação",
+    "IconDesc": "Classes CSS para definir o ícone de ativação.",
+    "DeactivateIcon": "Ícone de Desativação",
+    "DeactivateIconDesc": "Classes CSS para definir o ícone de desativação.",
+    "IconSize": "Tamanho do Ícone",
+    "IconPreview": "Pré-visualização do Ícone",
+    "PCColor": "Cor do Jogador",
+    "PCColorDesc": "Padrão: #44abe0",
+    "FriendlyColor": "Cor Amigável",
+    "FriendlyColorDesc": "Padrão: #44abe0",
+    "NeutralColor": "Cor Neutra",
+    "NeutralColorDesc": "Padrão: #146464",
+    "EnemyColor": "Cor do Inimigo",
+    "EnemyColorDesc": "Padrão: #d98f30",
+    "DoneColor": "Cor Inativa",
+    "DoneColorDesc": "Padrão: #aaaaaa",
+    "ActivatedLast": "Unidades Ativadas por Último",
+    "ActivatedLastDesc": "Mover unidades que fizeram seu turno para o final do rastreador.",
+    "SortTracker": "Ordenar o Rastreador",
+    "SortTrackerDesc": "Mover a unidade que está fazendo seu turno para o topo do rastreador e mover as unidades que fizeram seu turno para o final do rastreador.",
+    "EnableInitiative": "Habilitar Rolagem de Iniciativa",
+    "EnableInitiativeDesc": "Adicionar um botão para combatentes controlados rolarem iniciativa",
+    "AddActivation": "Adicionar Ativação",
+    "RemoveActivation": "Remover Ativação",
+    "UndoActivation": "Desativar Ativação"
+  }
+}
